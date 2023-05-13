@@ -12,7 +12,7 @@ public class Cliente {
 
     public static void main(String[] args){
         try (ZContext context = new ZContext()) {
-            //  Socket to talk to server
+            //  Socket para comunicacion con el servidor
             Socket requester = context.createSocket(SocketType.REQ);
             requester.connect(centralServerIp);
 
